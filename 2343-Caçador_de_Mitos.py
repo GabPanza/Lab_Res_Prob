@@ -1,5 +1,5 @@
 N =  int(input())                           # define o numero de registros de raio
-Mat = []                                    # define o vetor de coordenadas
+vetCoordenadas = []                         # define o vetor de coordenadas
 jafoi = [0]*N                               # define o vetor de comparação das coordenadas
 contF = 0                                   # define o contador
 for i in range(N):
@@ -7,10 +7,10 @@ for i in range(N):
     x,y = map(int,input().split())          # define o valor da coordenada X e Y do quadrante
     coordenadas.append(x)                   # insere as coordenadas x em uma lista
     coordenadas.append(y)                   # insere as coordenadas y em uma lista
-    Mat.append(coordenadas)                 # forma a matriz
+    vetCoordenadas.append(coordenadas)      # forma a matriz de coordenadas
 
-    if Mat[i] not in jafoi:                 # compara coordenadas e adiciona ao vetor, se n forem iguais
-        jafoi[i] = Mat[i]
+    if vetCoordenadas[i] not in jafoi:      # compara coordenadas e adiciona ao vetor, se n forem iguais
+        jafoi[i] = vetCoordenadas[i]
     else:                                   # se forem iguais, nao adiciona ao vetor e soma 1 ao contador
         contF+= 1
 

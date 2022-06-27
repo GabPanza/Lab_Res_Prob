@@ -8,7 +8,7 @@ while erro!= 0 and valor != 0:
     for i in range(len(str(erro))):
         valor = valor.replace(erro[i],"")
     lista_com_zeros = ["0"] * len(valor)
-    if collections.Counter(str(valor)) != collections.Counter(lista_vazia) and collections.Counter(str(valor)) != collections.Counter(lista_com_zeros):
+    if collections.Counter(valor) != collections.Counter(lista_vazia) and collections.Counter(valor) != collections.Counter(lista_com_zeros):
         print(int(valor))
     else:
         print(0)

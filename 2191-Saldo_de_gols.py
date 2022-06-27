@@ -44,5 +44,4 @@ def main():
             print(maior[1], maior[2], end="\n\n")
         n = int(input())
 
-
 main()
