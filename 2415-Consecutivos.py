@@ -8,5 +8,6 @@ for i in range(N_qntd_numeros-1):
     else:
         maiorSequencia.append(cont)
         cont=1
+maiorSequencia.append(cont)
 maiorSequencia.sort()
 print(maiorSequencia[-1])
